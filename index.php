@@ -6,23 +6,7 @@
 <div class="bg-amarillo contenedor sombra">
     <form id="contacto" action="#">
         <legend>Añada un contacto <span>Todos los campos son obligatorios</span></legend>
-        <div class="campos">
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Nombre Contacto" id="nombre">
-            </div>
-            <div class="campo">
-                <label for="empresa">Empresa:</label>
-                <input type="text" placeholder="Nombre Empresa" id="empresa">
-            </div>
-            <div class="campo">
-                <label for="nombre">Teléfono:</label>
-                <input type="tel" placeholder="Teléfono Contacto" id="telfono">
-            </div>
-        </div>
-        <div class="campo enviar">
-            <input type="submit" value="Añadir">
-        </div>
+        <?php include 'inc/layout/formulario.php'; ?>
     </form>
 </div>
 <div class="bg-blanco sombra contactos contenedor">
@@ -33,7 +17,7 @@
         <p class="total-contactos"><span>2 </span>Contactos</p>
 
         <div class="contenedor-tabla">
-            <table id="listado-contactos">
+            <table id="listado-contactos" class="listado-contactos">
                 <thead>
                     <tr>
                         <th>Nombre</th>
@@ -48,7 +32,7 @@
                     <td>IFP</td>
                     <td>5540390123</td>
                     <td>
-                        <a class="btn-editar btn" href="#">
+                        <a class="btn-editar btn" href="editar.php?id=1">
                             <i class="fas fa-pen-square"></i>
                         </a>
                         <button data-id="1" type="button" class="btn-borrar btn">
@@ -61,7 +45,7 @@
                     <td>IFP</td>
                     <td>5540390123</td>
                     <td>
-                        <a class="btn-editar btn" href="#">
+                        <a class="btn-editar btn" href="editar.php?id=1">
                             <i class="fas fa-pen-square"></i>
                         </a>
                         <button data-id="1" type="button" class="btn-borrar btn">
@@ -74,7 +58,7 @@
                     <td>IFP</td>
                     <td>5540390123</td>
                     <td>
-                        <a class="btn-editar btn" href="#">
+                        <a class="btn-editar btn" href="editar.php?id=1">
                             <i class="fas fa-pen-square"></i>
                         </a>
                         <button data-id="1" type="button" class="btn-borrar btn">
