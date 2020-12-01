@@ -9,9 +9,10 @@
     </div>
     <div class="campo">
         <label for="nombre">Teléfono:</label>
-        <input type="tel" placeholder="Teléfono Contacto" id="telfono">
+        <input type="tel" placeholder="Teléfono Contacto" id="telefono">
     </div>
 </div>
 <div class="campo enviar">
+    <input type="hidden" value="crear" id="accion">
     <input type="submit" value="Añadir">
 </div>

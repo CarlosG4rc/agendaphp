@@ -8,7 +8,7 @@
 </div>
 
 <div class="bg-amarillo contenedor sombra">
-    <form id="contacto" action="#">
+    <form id="contacto" action="registro.php">
         <legend>Edite el contacto <span></span></legend>
         <?php include 'inc/layout/formulario.php'; ?>
 
